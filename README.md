@@ -27,7 +27,7 @@ npm start
 
 Please make sure ports 3000 and 5000 are both free, port 3000 is used to host client and port 5000 is used to host server.
 
-If you are on macOS Monterey, port 5000 may be taken up by airplay. Find out how to resolve this issue [here](https://medium.com/pythonistas/port-5000-already-in-use-macos-monterey-issue-d86b02edd36c).
+If you are on macOS Monterey, port 5000 may be taken up by AirPlay. Find out how to resolve this issue [here](https://medium.com/pythonistas/port-5000-already-in-use-macos-monterey-issue-d86b02edd36c).
 
 
 ## Screenshots
