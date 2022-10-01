@@ -1,8 +1,10 @@
 # ILCoffee :coffee:
 ILCoffee is an application showcasing independent coffee shops in Edinburgh. 
 
-Built using React, Redux, Node, Express and MongoDB. Google Maps API is used
+* Built using React, Redux, Node, Express and MongoDB. 
+* Google Maps API is used
 to build a pipeline for processing up to date data for coffee shops. 
+* Deployed with Heroku and Netlify, the application can be accessed at [ilcoffee.xyz](ilcoffee.xyz).
 
 
 ## Installation and Setup
@@ -41,4 +43,4 @@ If you are on macOS Monterey, port 5000 may be taken up by AirPlay. Find out how
 * Menu for each cafe.
 * Map for all cafes.
 * Real-time deals for cafe items.
-* Deploy application.
+
