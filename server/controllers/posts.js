@@ -2,11 +2,9 @@ import express from "express";
 import axios from "axios";
 import { setTimeout } from "timers/promises";
 import CafeData from "../models/cafeData.js";
+import { MAP_API_KEY } from "../credentials/credentials.js";
 
 const router = express.Router();
-
-// This will remain for demo purposes but will be removed in production.
-const API_KEY = "AIzaSyAQolAiyCTGdSLqrejyA-GwXnUUJuohCz0";
 
 // Timeouts are used in this function to accomodate for delay between when a next_page_token
 // is issued and when it can be used. Google Places API has a limit of 60 results.
@@ -16,7 +14,7 @@ export const updateCafes = async (req, res) => {
   let responses = [];
 
   let response = await axios.get(
-    `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${category}+${city}&type=cafe&key=${API_KEY}`
+    `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${category}+${city}&type=cafe&key=${MAP_API_KEY}`
   );
 
   responses.push(response.data.results);
@@ -24,7 +22,7 @@ export const updateCafes = async (req, res) => {
   while (response.data.next_page_token) {
     await setTimeout(5000);
     response = await axios.get(
-      `https://maps.googleapis.com/maps/api/place/textsearch/json?pagetoken=${response.data.next_page_token}&key=${API_KEY}`
+      `https://maps.googleapis.com/maps/api/place/textsearch/json?pagetoken=${response.data.next_page_token}&key=${MAP_API_KEY}`
     );
     responses.push(response.data.results);
   }
@@ -40,7 +38,7 @@ export const updateCafes = async (req, res) => {
   operationalCafes.forEach(async (cafe) => {
     const placeID = cafe.place_id;
     const { data } = await axios.get(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=${API_KEY}`
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeID}&key=${MAP_API_KEY}`
     );
 
     let imageResponse = {};
@@ -48,7 +46,7 @@ export const updateCafes = async (req, res) => {
 
     if (cafeData.photos?.[0]?.photo_reference) {
       imageResponse = await axios.get(
-        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${cafeData.photos[0].photo_reference}&key=${API_KEY}`
+        `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${cafeData.photos[0].photo_reference}&key=${MAP_API_KEY}`
       );
       console.log(imageResponse.request.res.responseUrl);
     }

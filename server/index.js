@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import postRoutes from "./routes/posts.js";
+import { MONGODB_USERNAME } from "./credentials/credentials.js";
+import { MONGODB_PASSWORD } from "./credentials/credentials.js";
 
 const app = express();
 
@@ -15,8 +17,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to ILCoffee API");
 });
 
-const CONNECTION_URL =
-  "mongodb+srv://guoyu-zhang:yFgQYvMWfxVFQoKF@cluster0.weflnit.mongodb.net/?retryWrites=true&w=majority";
+const CONNECTION_URL = `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@cluster0.weflnit.mongodb.net/?retryWrites=true&w=majority`;
 const PORT = process.env.PORT || 5000;
 
 mongoose
