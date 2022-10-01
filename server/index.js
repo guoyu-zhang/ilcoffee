@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/", postRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to ILCoffee API");
+});
+
 const CONNECTION_URL =
   "mongodb+srv://guoyu-zhang:yFgQYvMWfxVFQoKF@cluster0.weflnit.mongodb.net/?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;

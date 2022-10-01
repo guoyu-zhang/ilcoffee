@@ -75,7 +75,7 @@ export const updateCafes = async (req, res) => {
     });
   });
 
-  res.json("Successfully fetched and updated cafes.");
+  res.json(flattenedResponses);
 };
 
 export const getCafes = async (req, res) => {
