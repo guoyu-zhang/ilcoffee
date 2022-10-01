@@ -20,7 +20,6 @@ const CafeCard = ({ cafe, isSmallCard }) => {
   const smallStyles = useSmallStyles();
   const largeStyles = useLargeStyles();
   const styles = isSmallCard ? smallStyles : largeStyles;
-
   const shadowStyles = useSoftRiseShadowStyles({ inactive: false });
 
   return (

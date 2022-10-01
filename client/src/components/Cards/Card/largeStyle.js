@@ -16,6 +16,7 @@ export const useLargeStyles = makeStyles(({ breakpoints, spacing }) => ({
   },
   card: {
     minWidth: 300,
+    borderRadius: 8,
     [breakpoints.up("md")]: {
       display: "flex",
       flexDirection: "row",
