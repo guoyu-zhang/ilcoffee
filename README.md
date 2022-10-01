@@ -17,7 +17,7 @@ npm start
 
 ## Screenshots
 
-![Alt text](/mockups/mockupMain.png?raw=true "Optional Title")
+![Alt text](/mockups/mockUpMain.png?raw=true "Optional Title")
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
