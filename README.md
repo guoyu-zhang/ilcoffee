@@ -1,4 +1,4 @@
-# ILCoffee
+# ILCoffee :coffee:
 ILCoffee is an application showcasing independent coffee shops in Edinburgh. 
 
 Built using React, Redux, Node, Express and MongoDB. Google Maps API is used
