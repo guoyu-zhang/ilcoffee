@@ -37,7 +37,7 @@ If you are on macOS Monterey, port 5000 may be taken up by AirPlay. Find out how
 ![Hero Mockup](/mockups/mockUpMain.png?raw=true "Hero Mockup")
 ![Cards Mockup](/mockups/mockUpCards.png?raw=true "Cards Mockup")
 
-## Future Improvements
+## Features coming soon
 
 
 * Menu for each cafe.
