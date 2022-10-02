@@ -12,7 +12,7 @@ Clone this repository. You will need node and npm installed globally on your mac
 
 **Credentials**
 
-As the credentials directory has been ignored when pushing to Github, you will need to create a directory and file as such: /credentials/credentials.js within the server directory. This file should look like the following, substiting fields for your credentials.
+As the credentials directory has been ignored when pushing to Github, you will need to create a directory and file as such: /credentials/credentials.js within the server directory. This file should look like the following, changing appropriate fields for your credentials.
 ```
 export const MAP_API_KEY = "YOUR API KEY";
 export const MONGODB_USERNAME = "YOUR MONGODB USERNAME";
