@@ -10,6 +10,15 @@ to build a pipeline for processing up to date data for coffee shops.
 ## Installation and Setup
 Clone this repository. You will need node and npm installed globally on your machine.
 
+**Credentials**
+
+As the credentials directory has been ignored when pushing to Github, you will need to create a directory and file as such: /credentials/credentials.js within the server directory. This file should look like the following, substiting fields for your credentials.
+```
+export const MAP_API_KEY = "YOUR API KEY";
+export const MONGODB_USERNAME = "YOUR MONGODB USERNAME";
+export const MONGODB_PASSWORD = "YOUR MONGODB PASSWORD";
+```
+
 **To start up server:**
 
  First cd into /server then
@@ -23,14 +32,6 @@ First cd into /client then
 ```bash
 npm install --force
 npm start
-```
-**Credentials**
-
-As the credentials directory has been ignored when pushing to Github, you will need to create a directory and file as such: /credentials/credentials.js within the server directory. This file should look like the following, substiting fields for your credentials.
-```
-export const MAP_API_KEY = "YOUR API KEY";
-export const MONGODB_USERNAME = "YOUR MONGODB USERNAME";
-export const MONGODB_PASSWORD = "YOUR MONGODB PASSWORD";
 ```
 
 **Potential Error**
