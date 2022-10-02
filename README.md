@@ -1,7 +1,7 @@
 # ILCoffee :coffee:
 ILCoffee is an application showcasing independent coffee shops in Edinburgh.
 
-Edinburgh 
+Edinburgh has the most coffee shops per 100,000 people in Europe according to this [article](https://www.publicsectorcatering.co.uk/news/research-reveals-edinburgh-coffee-capital-europe). The city is also the biggest supporter of independently-owned coffee shops according to this [article](https://www.edinburghlive.co.uk/best-in-edinburgh/spilling-beans-edinburgh-named-uks-16211163).
 
 * Built using React, Redux, Node, Express and MongoDB. 
 * Google Maps API is used
