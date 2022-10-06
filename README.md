@@ -1,5 +1,5 @@
-# ILCoffee :coffee:
-ILCoffee is an application showcasing independent coffee shops in Edinburgh.
+# ilcoffee :coffee:
+ilcoffee is an application showcasing independent coffee shops in Edinburgh.
 
 **Motivation**
 
