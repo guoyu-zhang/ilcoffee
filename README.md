@@ -59,9 +59,9 @@ If you are on macOS Monterey, port 5000 may be taken up by AirPlay. Find out how
 
 * Menu for each cafe.
 * Map for all cafes.
-* Real-time deals for cafe items.
 
 **Long Term Goals**
+* Real-time deals for cafe items.
 * User profiles for engagment.
 * Popular today (tracks how many coffees bought at a shop today).
 * Perhaps a way to have a monthly coffee subscription with coffe shops.
