@@ -28,8 +28,9 @@ const Footer = () => {
             paddingTop={10}
             paddingBottom={10}
           >
-            Think our data isn't up to date? Click the coffee machine and come
-            back in 60 seconds to see the changes.
+            Our data is updated weekly due to Google API limitations. Want to
+            update the data right now? Click the coffee machine and come back in
+            60 seconds to see the changes.
             <IconButton onClick={() => updateCafes()} aria-label="update cafes">
               <CoffeeMakerIcon />
             </IconButton>
